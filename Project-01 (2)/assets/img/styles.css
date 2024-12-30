@@ -1,0 +1,748 @@
+
+@font-face {
+    font-family: "Protest Revolution";
+    src: url("path/to/ProtestRevolution-Regular.ttf") format("truetype");
+  }
+  
+  
+  body {
+        margin: 0px;
+        font-family: sans-serif;
+        background-color: #17061bd5 !important; 
+        background-image: url('assets/img/download.png'); 
+        background-size: 1000px;
+        background-repeat: no-repeat;
+       
+    }
+    
+    /* Main container */
+    .container {
+        text-align: center;
+    }
+   
+    /* subtitle styling */
+    .subtitle {
+        font-family: "Protest Revolution", sans-serif !important;
+        font-weight: 400;
+        font-size: 2.1em;
+        color: #fff;
+    }
+    
+    /* Navbar styling */
+    nav {
+        background-color: #4b3232 !important; 
+        padding: 25px 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        position: sticky !important;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    /* Styling for the unordered list */
+    .nav-menu {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Styling for each list item */
+    .nav-item {
+        margin: 0 15px;
+    }
+    .cart-icon{
+      font-size: 20px !important;
+    }
+    .navbar-light .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+    /* Styling for links */
+    .nav-link {
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2em;
+        color: #ffffff !important;
+        padding: 5px 10px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    /* Hover effect for links */
+    .nav-link:hover {
+        background-color: #7c4150;
+        color: #f8ffcf;
+    }
+    
+    /* Active link styling (optional) */
+    .nav-link.active {
+        font-weight: bold;
+        border-bottom: 2px solid #f8ffcf;
+    }
+    
+    /* Intro Section Styling */
+    .intro-section {
+      margin-left: auto; 
+      margin-right: auto; 
+      max-width: 900px; 
+      width: 80%; 
+      padding: 40px 20px; 
+      border-radius: 15px; 
+      text-align: center; 
+  }
+  
+  .intro-heading {
+      font-family: "Sour Gummy", serif;
+      font-size: 3em;
+      color: #3b2f2f;
+  }
+  
+  .intro-text {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.4em;
+      color: #555555;
+      line-height: 1.8;
+  }
+    
+    /* video styling */
+    .coffee-video {
+        height: auto;
+        float: right;
+        margin-bottom: 30px;
+       
+    }
+    
+    /* Order now Button styling */
+    .button-container {
+        text-align: center;
+        margin: 150px 0;
+    }
+    
+    .button {
+        background-color: #7a3e3e;
+        color: #ffffff;
+        border: none;
+        padding: 15px 40px;
+        font-family: 'Fredoka One', cursive;
+        font-size: 1em;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.2s, background-color 0.3s;
+    }
+    
+    .button:hover {
+        background-color: #5a2b2b;
+        transform: scale(1.1);
+    }
+    
+    /* Cold Coffee Section Styling */
+    .cold-coffee-section {
+        background-color: #f4e3d0; 
+        padding: 50px 40px !important; /* spacing */
+        text-align: center;
+        border-radius: 12px; /* Smooth rounded corners */
+        margin: 10px auto 50px auto; /* Move downwards */
+        max-width: 1300px;
+       
+    }
+    
+    /* Title Styling */
+    .cold-coffee-title {
+        font-family: "Sour Gummy", serif !important;
+        font-size: 2.9em;
+        color: #3b2f2f; /* Dark coffee brown */
+        margin-bottom: 30px;
+    }
+    
+    /* Cold Coffee Items Container */
+    
+    /* Cold Coffee Items Grid */
+  .cold-coffee-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+  }
+  .cart-items {
+      max-height: 300px;
+      width: 300px;
+      overflow-y: auto;
+  }
+  .cart-icon {
+      font-size: 1.5em;
+  }
+  /* Cold Coffee Item Styling */
+  .cold-coffee-item {
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;  /* Ensure equal height */
+  }
+  
+  /* Adjusting Image Size */
+  .cold-coffee-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Text Content Styling */
+  .cold-coffee-text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+  }
+    /* Hover Effect */
+    .cold-coffee-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Cold Coffee Image Styling */
+   
+    
+    /* Cold Coffee Item Title */
+    .cold-coffee-item-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.8em;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    
+    /* Cold Coffee Item Description */
+    .cold-coffee-item-description {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2em;
+        color: #555555;
+        line-height: 1.6;
+    }
+    
+    /* Add to Cart Button */
+    .cold-coffee-add-btn {
+        margin-top: 10px;
+        padding: 10px 15px;
+        font-size: 1em;
+        margin:0px 40px 0px 40px;
+        color: #fff;
+        background-color: #795548; /* Coffee brown */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .cold-coffee-add-btn:hover {
+        background-color: #5d4037;
+    }
+    
+    /* Hot Coffee Section Styling */
+    .hot-coffee-nav {
+        background-color: #744f4f;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        color: #000000; /* Neutral text color */
+        padding: 10px 40px; /* Increased padding for better spacing */
+        text-align: center;
+        border-radius: 12px; /* Smooth rounded corners */
+        max-width: 1300px;
+        margin: 10px auto 50px auto /* move upwards */
+    }
+    
+    /* Title Styling */
+    .hot-coffee-title {
+        font-family: "Sour Gummy", serif;
+        font-size: 3.4em;
+        margin-bottom: 30px;
+        color: #000000;
+    }
+    
+    /* Hot Coffee Items Container */
+    .hot-coffee-items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr) !important;
+      gap: 30px;
+      justify-content: center;
+      padding: 20px;
+  }
+    
+    /* Individual Hot Coffee Item Styling */
+    .hot-coffee-item {
+        background-color: rgba(255, 255, 255, 0.9); 
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        max-width: 300px;
+        margin: auto;
+    }
+    
+    /* Hover Effect */
+    .hot-coffee-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Image Styling */
+    .hot-coffee-image {
+        width: 100%;
+        height: 180px;
+        object-fit: contain;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    
+    /* Hot Coffee Item Title */
+    .hot-coffee-item-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: #3e2723; /* Dark brown */
+    }
+    
+    /* Hot Coffee Item Description */
+    .hot-coffee-item-description {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2em;
+        line-height: 1.5;
+        color: #555555;
+    }
+    
+    /* Coffee Beans Section Styling */
+    .coffee-beans-section {
+        background-color: #744f4f;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px 40px; /* Increased padding for better spacing */
+        text-align: center;
+        border-radius: 12px; /* Smooth rounded corners */
+        margin: 50px auto 50px auto;
+        max-width: 1300px;
+    }
+    
+    /* Title Styling */
+   
+    
+    .coffee-beans-title {
+            font-family: "Sour Gummy", serif;
+            font-size: 3.4em;
+            margin-bottom: 30px;
+            color: #000000;
+    }
+    
+    /* Coffee Beans Items Container */
+    .coffee-beans-items {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+    
+    /* Coffee Beans Item Styling */
+    .coffee-beans-item {
+        background-color: #ffffff; /* Clean white background */
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        max-width: 300px;
+    }
+    
+    /* Hover Effect */
+    .coffee-beans-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Coffee Beans Image Styling */
+    .coffee-beans-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    
+    /* Coffee Beans Item Description */
+    .coffee-beans-item-description {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2em;
+        color: #555;
+        line-height: 1.6;
+    }
+    
+    /* Add to Cart Button */
+    .coffee-beans-add-btn {
+        margin-top: 10px;
+        padding: 10px 15px;
+        font-size: 1em;
+        color: #fff;
+        background-color: #795548; /* Coffee brown */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .coffee-beans-add-btn:hover {
+        background-color: #5d4037; /* Darker coffee brown on hover */
+    }
+    
+    /* Gallery Section Styling */
+    .gallery-section {
+        background-color: #f4e3d0; /* Warm beige for a coffee-inspired vibe */
+        padding: 60px 20px;
+        text-align: center;
+        border-radius: 12px;
+        margin: 50px auto;
+        max-width: 1200px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* Gallery Title */
+    .gallery-title {
+        font-family: "Sour Gummy", serif;
+        font-size: 3em;
+        color: #3b2f2f; /* Dark coffee brown */
+        margin-bottom: 20px;
+    }
+    
+    /* Gallery Description */
+    .gallery-description {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2em;
+        color: #555555;
+        margin-bottom: 40px;
+        line-height: 1.6;
+    }
+    
+    /* Gallery Grid */
+  .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr); /* 6 items in one row */
+      gap: 20px;
+      justify-content: center;
+      padding: 20px;
+  }
+  
+  /* Gallery Item */
+  .gallery-item {
+      overflow: hidden;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image Styling */
+  .gallery-image {
+      width: 100%;
+      height: auto;
+      display: block;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+      .gallery-grid {
+          grid-template-columns: repeat(4, 1fr); /* 4 items in a row for medium screens */
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .gallery-grid {
+          grid-template-columns: repeat(2, 1fr); /* 2 items in a row for smaller screens */
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .gallery-grid {
+          grid-template-columns: 1fr; /* 1 item per row for very small screens */
+      }
+  }
+  
+    /* Contact Us Section */
+    .contact-us-section {
+        background-color: #f4e3d0; /* Light beige */
+        padding: 60px 20px;
+        text-align: center;
+        border-radius: 12px;
+        margin: 50px auto;
+        max-width: 1200px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* Title Styling */
+    .contact-us-title {
+        font-family: 'Poppins', sans-serif !important;
+        font-size: 2.8em;
+        color: #3b2f2f; /* Dark coffee brown */
+        margin-bottom: 20px;
+        font-weight: 600;
+        text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Description Styling */
+    .contact-us-description {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2em;
+        color: #6b4f4f;
+        margin-bottom: 30px;
+    }
+    
+    /* Container Styling */
+    .contact-us-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    
+    /* Form Styling */
+    .contact-us-form {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .form-group label {
+        display: block;
+        font-family: 'Poppins', sans-serif !important;
+        font-size: 14px !important;
+        color: #3b2f2f;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 1em;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: #795548; /* Coffee brown */
+        box-shadow: 0 0 5px rgba(121, 85, 72, 0.5);
+    }
+    
+    /* Button Styling */
+    .contact-us-submit-btn {
+        padding: 10px 20px;
+        font-size: 1em;
+        color: #fff;
+        background-color: #795548; /* Coffee brown */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .contact-us-submit-btn:hover {
+        background-color: #5d4037;
+    }
+    
+    /* Contact Details Styling */
+    .contact-details {
+        max-width: 400px;
+        text-align: left;
+    }
+    
+    .contact-details h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.8em;
+        color: #3b2f2f;
+        margin-bottom: 10px;
+        font-weight: 600 !important;
+    }
+    
+    .contact-details p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+        color: #6b4f4f;
+        line-height: 1.6;
+    }
+    /* Our Story Section */
+    .our-story-section {
+        background-color: #f7e7d3; /* Warm cream background */
+        padding: 60px 20px; /* Space around the section */
+        font-family: 'Georgia', serif; /* Classic, elegant font */
+        text-align: center; /* Center align text */
+    }
+    
+    /* Container for Content */
+    .our-story-container {
+        max-width: 900px; /* Restrict width for readability */
+        margin: 0 auto;
+    }
+    
+    /* Section Title */
+    .our-story-title {
+        font-size: 36px;
+        color: #6a4e37; /* Rich coffee brown */
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-bottom: 2px solid #6a4e37; /* Underline effect */
+        display: inline-block; /* Align underline with text */
+    }
+    
+    /* Content Styling */
+    .our-story-content {
+        display: flex; /* Flexbox layout */
+        flex-direction: row; /* Side-by-side layout */
+        gap: 20px; /* Space between text and image */
+        align-items: center; /* Align items vertically */
+        justify-content: space-between; /* Even spacing */
+    }
+    
+    /* Text Styling */
+    .our-story-text {
+        font-family: "Shadows Into Light", serif;
+  font-weight: 400;
+  font-style: normal;
+        font-size: 18px;
+        color: #3a2f25; /* Warm dark brown */
+        line-height: 1.8;
+        flex: 1; /* Allow text to take up available space */
+    }
+    
+    /* Image Styling */
+    .our-story-image {
+        max-width: 400px; /* Restrict image size */
+        width: 100%; /* Responsive sizing */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        flex-shrink: 0; /* Prevent image from shrinking */
+    }
+    
+    /* Responsive Design for Smaller Screens */
+    @media (max-width: 768px) {
+        .our-story-content {
+            flex-direction: column; /* Stack content vertically */
+            text-align: center; /* Center-align text */
+        }
+        .coffee-beans-section{
+        margin: 20px auto 50px auto;
+        }
+  
+        .hot-coffee-nav{
+          padding: 10px 10px !important;
+        }
+  
+        .cold-coffee-section{
+          padding: 30px 10px !important;
+        }
+        .cold-coffee-item-title{
+          margin-top: 10px;
+          font-size: 24px !important;
+        }
+  
+        .intro-section{
+         width: 100% !important;
+        }
+  
+        .our-story-image {
+            margin-top: 20px; /* Add spacing between text and image */
+        }
+        .cold-coffee-items {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 20px;
+          justify-content: center;
+        }
+        
+    }
+    
+    /* Footer Styles */
+    .footer {
+        background-color: #2e2e2e;
+        color: #fff;
+        padding: 40px 20px;
+      }
+      
+      .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1300px;
+        margin: 0 auto;
+      }
+      
+      .footer-about,
+      .footer-links,
+      .footer-social {
+        flex: 1;
+        margin: 10px;
+        min-width: 250px;
+      }
+      
+      .footer h3, .footer h4 {
+        font-family: 'Cooper Black', serif;
+        color: #d4a373;
+        margin-bottom: 10px;
+      }
+      
+      .footer p {
+        font-size: 0.9em;
+        line-height: 1.6;
+      }
+      
+      .footer-links ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .footer-links ul li {
+        margin-bottom: 10px;
+      }
+      
+      .footer-links ul li a,
+      .footer-social a {
+        text-decoration: none;
+        color: #d4a373;
+        font-size: 0.9em;
+      }
+      
+      .footer-links ul li a:hover,
+      .footer-social a:hover {
+        text-decoration: underline;
+      }
+      
+      .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+        border-top: 1px solid #444;
+        padding-top: 10px;
+        font-size: 0.8em;
+        color: #aaa;
+      }
+    
+  
